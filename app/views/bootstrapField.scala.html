@@ -11,7 +11,7 @@
     <label class="control-label" for="@elements.id">@elements.label(elements.lang)</label>
     <div class="controls">
         @elements.input
-        <span class="help-inline">@elements.errors(elements.lang).mkString(", ")</span>
-        <span class="help-block">@elements.infos(elements.lang).mkString(", ")</span> 
+        @if(elements.errors.length > 0) {<span class="help-inline">@elements.errors(elements.lang).mkString(", ")</span>}
+        @if(elements.infos.length > 0) {<p class="help-block">@elements.infos(elements.lang).mkString(", ")</p>}
     </div>
 </div>

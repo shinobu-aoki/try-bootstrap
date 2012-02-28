@@ -1,11 +1,8 @@
 @(userForm: Form[User])
 
 @import helper._
-@import views.BootstrapHelper._
 
-@*implicitFieldConstructor = @{ FieldConstructor(bootstrapField.f) }*@
-
-@main("Form") {
+@main("Form", false) {
   
   <h2>User form</h2>
   

@@ -38,4 +38,8 @@ object Application extends Controller {
     Ok(views.html.form(userForm))
   }
   
+  def nobsForm = Action {
+    Ok(views.html.nobs_form(userForm))
+  }
+  
 }

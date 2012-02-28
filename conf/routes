@@ -6,6 +6,7 @@
 GET     /                           controllers.Application.index
 GET     /list                       controllers.Application.list
 GET     /form                       controllers.Application.form
+GET     /nobs_form                  controllers.Application.nobsForm
 
 # Map static resources from the /public folder to the /assets URL path
 GET     /assets/*file               controllers.Assets.at(path="/public", file)
